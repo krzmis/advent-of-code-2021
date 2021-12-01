@@ -1,4 +1,4 @@
-package dev.misiek.utils.day1;
+package dev.misiek.day1;
 
 import dev.misiek.utils.FileUtils;
 
