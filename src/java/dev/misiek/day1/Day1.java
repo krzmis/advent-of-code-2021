@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Day1 {
 
-    public static final String INPUT_FILE_PATH = "/home/misiek/IdeaProjects/advent-of-code-2021/src/java/dev/misiek/utils/day1/input";
+    public static final String INPUT_FILE_PATH = "/home/misiek/IdeaProjects/advent-of-code-2021/src/java/dev/misiek/utils/day1/input.txt";
 
     public static void main(String[] args) {
         final Path path = Path.of(INPUT_FILE_PATH);
