@@ -63,8 +63,8 @@ public class Day3 {
         int decimalEpsilonRate = BaseUtils.baseToDecimal(2, epsilonRate.toString());
 
         System.out.println("\n############################ PART ONE ############################");
-        System.out.printf("Gama Rate = (%s)2, (%s)10\n", gamaRate, decimalGamaRate);
-        System.out.printf("Epsilon Rate = (%s)2, (%s)10\n", epsilonRate, decimalEpsilonRate);
+        System.out.printf("Gama Rate = (%s)2, (%s)10%n", gamaRate, decimalGamaRate);
+        System.out.printf("Epsilon Rate = (%s)2, (%s)10%n", epsilonRate, decimalEpsilonRate);
         System.out.printf("Result = %s%n", decimalGamaRate * decimalEpsilonRate);
 
         String oxygenRatingResult = oxygenRating.stream().findFirst().orElseThrow(() ->
@@ -77,8 +77,8 @@ public class Day3 {
         int decimalCo2Rating = BaseUtils.baseToDecimal(2, co2RatingResult);
 
         System.out.println("\n############################ PART TWO ############################");
-        System.out.printf("Oxygen Rating = (%s)2, (%s)10\n", oxygenRatingResult, decimalOxygenRating);
-        System.out.printf("Co2 Rating = (%s)2, (%s)10\n", co2RatingResult, decimalCo2Rating);
+        System.out.printf("Oxygen Rating = (%s)2, (%s)10%n", oxygenRatingResult, decimalOxygenRating);
+        System.out.printf("Co2 Rating = (%s)2, (%s)10%n", co2RatingResult, decimalCo2Rating);
         System.out.printf("Result = %s%n", decimalOxygenRating * decimalCo2Rating);
     }
 

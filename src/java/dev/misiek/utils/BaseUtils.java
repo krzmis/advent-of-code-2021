@@ -16,13 +16,13 @@ public abstract class BaseUtils {
     }
 
     private static int checkForHexChar(String character) {
-        return switch (character.toLowerCase(Locale.ROOT)) {
-            case "a" -> 10;
-            case "b" -> 11;
-            case "c" -> 12;
-            case "d" -> 13;
-            case "e" -> 14;
-            case "f" -> 15;
+        return switch (character.toUpperCase(Locale.ROOT)) {
+            case "A" -> 10;
+            case "B" -> 11;
+            case "C" -> 12;
+            case "D" -> 13;
+            case "E" -> 14;
+            case "F" -> 15;
             default -> Integer.parseInt(character);
         };
     }
