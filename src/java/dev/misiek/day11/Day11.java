@@ -9,13 +9,12 @@ import java.util.List;
 public class Day11 {
 
     private static final Path FILE_PATH = Path.of("/Users/misk/IdeaProjects/advent-of-code-2021/src/java/dev/misiek/day11/input.txt");
-    private static final int STEPS = 100;
-
     private static final List<String> INPUT_FILE = FileUtils.readFromFile(FILE_PATH);
 
     private static final int[][] OCTOPUSES_MATRIX = ArrayUtils.get2DIntArray(INPUT_FILE);
     private static final boolean[][] FLASHED_OCTOPUSES = ArrayUtils.get2DBooleanArray(INPUT_FILE);
 
+    private static final int STEPS = 100;
     private static final int ROW_SIZE = OCTOPUSES_MATRIX.length;
     private static final int COLUMN_SIZE = OCTOPUSES_MATRIX[0].length;
 

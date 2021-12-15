@@ -37,8 +37,7 @@ public abstract class ArrayUtils {
 
     public static void printGrid(int[][] array) {
         System.out.println();
-        Arrays.stream(array)
-                .forEach(row ->
+        Arrays.stream(array).forEach(row ->
                         System.out.printf("%s%n", Arrays.toString(row)
                                 .replace(", ", "")
                                 .replace("[", "")
@@ -48,13 +47,23 @@ public abstract class ArrayUtils {
 
     public static void printGrid(boolean[][] array) {
         System.out.println();
-        Arrays.stream(array)
-                .forEach(row ->
+        Arrays.stream(array).forEach(row ->
                         System.out.printf("%s%n", Arrays.toString(row)
                                 .replace(", ", " ")
                                 .replace("[", "")
                                 .replace("]", "")));
 
+    }
+
+    public static int[][] fillArray(int[][] arr, int filler) {
+        int[][] filledArr = new int[arr.length][];
+
+        for (int i = 0; i < filledArr.length; i++) {
+            filledArr[i] = new int[arr[i].length];
+            Arrays.fill(filledArr[i], filler);
+        }
+
+        return filledArr;
     }
 
 }
